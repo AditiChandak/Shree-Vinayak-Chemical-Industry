@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postinstall": "sh -c flowbite-react patch"
+    "postinstall": "flowbite-react patch"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

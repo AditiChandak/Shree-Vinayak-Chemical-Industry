@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 // import"./assets/css/style.css"
-import "../public/css/style.css"
+import "/css/style.css"
 import Home from './Components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CommonLayout from './Components/CommonLayout';

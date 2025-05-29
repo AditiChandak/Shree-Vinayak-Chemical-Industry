@@ -73,7 +73,6 @@ export default function Header() {
                         <Popover className="relative">
                             <PopoverButton className="flex items-center gap-x-1 text-lg/6 font-medium text-gray-900 hover:transform-[scale(1.2)]">
                                 Products
-                                <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-black-400" />
                             </PopoverButton>
 
                             <PopoverPanel
@@ -140,7 +139,6 @@ export default function Header() {
                                     <Disclosure as="div" className="-mx-3">
                                         <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                                             Products
-                                            <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                                         </DisclosureButton>
                                         <DisclosurePanel className="mt-2 space-y-2">
                                             {[...products].map((item) => {
@@ -182,17 +180,17 @@ export default function Header() {
                 </Dialog>
             </header>
 
-            <div className='fixed z-100 right-10 bottom-30 sm:w-12 sm:h-30 max-sm:w-12 max-sm:h-30 sm:right-8 sm:bottom-30 bg-[#90D1CA] shadow-md shadow-[#90D1CA] ring-2 ring-[#BEE4D0] rounded-xl'>
+            <div className='fixed z-100 right-10 bottom-40 sm:w-12 sm:h-30 max-sm:w-12 max-sm:h-30 sm:right-8 sm:bottom-40 bg-[#90D1CA] shadow-md shadow-[#90D1CA] ring-2 ring-[#BEE4D0] rounded-xl'>
                 <a href='mailto:vinayakchemicals18@gmail.com' onMouseEnter={()=>{setMailUsText(true)}} onMouseLeave={()=>{setMailUsText(false)}}>
                     {
                         (mailUsText == true)
                         ?
-                            <div className='h-15 w-8 mx-auto font-bold py-2 border-b-3'>
+                            <div className='h-16 w-8 mx-auto font-bold py-2 border-b-4'>
                                 <a href='mailto:vinayakchemicals18@gmail.com'>Mail Us!</a>
                             </div>
                             
                         :
-                            <MdOutgoingMail className='h-15 w-8 mx-auto border-b-3'/>
+                            <MdOutgoingMail className='h-16 w-8 mx-auto border-b-4'/>
                     }
                     
                 </a>
@@ -200,12 +198,12 @@ export default function Header() {
                 {
                         (callUsText == true)
                         ?
-                            <div className='h-15 w-8 mx-auto font-bold py-2'>
+                            <div className='h-16 w-8 mx-auto font-bold py-2'>
                                 <a href='tel:9651506757'>Call Us!</a>
                             </div>
                             
                         :
-                            <MdAddIcCall className='h-15 w-8 mx-auto'/>
+                            <MdAddIcCall className='h-16 w-8 mx-auto'/>
                     }
                     
                 </a>   

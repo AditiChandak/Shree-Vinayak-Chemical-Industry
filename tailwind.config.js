@@ -1,9 +1,8 @@
-module.exports = {
-    content: [
-        './src/**/*.{js,jsx,ts,tsx}', // The path to your React components/files
-    ],
+export default {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
-        extend: {},
+      extend: {},
     },
     plugins: [],
-    };
+  }
+  
